@@ -2,12 +2,18 @@ name: Update README Project Index
 
 on:
   push:
+    # se déclenche quand tu ajoutes/modifies un projet
     paths:
       - "**/project.yaml"
+      - "**/project.json"
+      - "README.md" # (si tu bouges les balises)
+  workflow_dispatch: {} # permet de lancer manuellement
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # permet à l'action de commit le README
     steps:
       - uses: actions/checkout@v4
 
@@ -16,20 +22,20 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install dependencies
+      - name: Install deps
         run: pip install pyyaml
 
-      - name: Update README
+      - name: Generate table
         run: python .github/scripts/update_readme.py
 
-      - name: Commit changes
+      - name: Commit README if changed
         run: |
-          if git diff --quiet; then
-            echo "No changes"
-          else
-            git config user.name "github-actions"
-            git config user.email "github-actions@github.com"
+          if ! git diff --quiet; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add README.md
             git commit -m "docs: auto-update project index"
             git push
+          else
+            echo "No changes to commit."
           fi
