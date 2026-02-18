@@ -39,4 +39,4 @@ This repository serves as my technical diary for AI development. It covers every
 
 ## 👤 Contact
 
-[Thierry Ndimis] - [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/thim-ndimis)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/thim-ndimis)
