@@ -38,6 +38,6 @@ This repository serves as my technical diary for AI development. It covers every
 
 ## 👤 Contact
 
-[Thierry Ndimis] - <a href="https://www.linkedin.com/in/TON-PROFIL">
-  <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" width="40" height="40" alt="LinkedIn"/>
-</a>(linkedin.com/in/thim-ndimis)
+[Thierry Ndimis] - <a href="https://www.linkedin.com/in/thim-ndimis">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" width="40" height="40" alt="LinkedIn"/>
+</a>
