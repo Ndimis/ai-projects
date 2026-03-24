@@ -20,6 +20,8 @@ This repository serves as my technical diary for AI development. It covers every
 ## 📈 Project Log
 
 ### [Project 1] - Resource Prediction via Linear Regression
+### [Project 2] - Clustering for network segmentation
+### [Project 3] - Time series resource forecasting
 
 - **Concept:** Understanding how variables correlate to predict future states.
 - **Project:** A script that predicts CPU/RAM usage based on historical network traffic volume.
